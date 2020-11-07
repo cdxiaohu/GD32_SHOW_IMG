@@ -9,7 +9,7 @@
     2016-01-15, V1.0.0, demo for GD32F1x0(x=3,5)
     2016-05-13, V2.0.0, demo for GD32F1x0(x=3,5)
 */
-#include <stdio.h>
+//#include <stdio.h>
 #include "lcd_driver.h"
 #include "gui.h"
 #include "delay.h"
@@ -99,12 +99,7 @@ void color_test(void)
 {
     __O  uint8_t i=2;
 
-	//printf("out wihle i=%d\n",i);
-
-  //  while(i--)
-	{
-	//printf("i=%d\n",i);
-		#if 0
+    while(i--){
         /* lcd display color test */
         lcd_clear(WHITE);
         gui_draw_font_gbk16(20,50,BLACK,WHITE,"Color Display Test");
@@ -134,7 +129,7 @@ void color_test(void)
         gui_draw_font_gbk16(20,50,YELLOW,BLUE,"Color Display Test");
         gui_draw_font_gbk16(100,100,YELLOW,BLUE,"Blue");
         delay_ms(1000);
-		#endif
+
         /* lcd display color test */
         lcd_clear(YELLOW);
         gui_draw_font_gbk16(20,50,BLUE,YELLOW,"Color Display Test");

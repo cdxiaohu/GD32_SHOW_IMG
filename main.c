@@ -16,7 +16,6 @@
 #include "tft_test.h"
 #include "delay.h"
 #include "systick.h"
-#include "test.c"
 
 void test_status_led_init(void);
 void flash_led(uint32_t times);
@@ -42,7 +41,7 @@ int main(void)
     delay_init(72);
 
     /* flash led for test */
-    flash_led(2);
+    flash_led(1);
 
     /* enable the gpio clock */
     rcu_periph_clock_enable(RCU_GPIOA);
@@ -55,20 +54,19 @@ int main(void)
 		printf("sys init success \n");
 		//while (RESET == usart_flag_get(USART0 , USART_STAT_TC));
 	
-  //  while(1){
+    while(1){
         /* clear the lcd to blue*/
         lcd_clear(BLUE);
         /* font display test*/
         font_test();
         /* num display test*/
-    //   num_test();
+        num_test();
         /* draw display test*/
-   //     draw_test();
+        draw_test();
         /* color display test*/
   	    color_test();
-		Pic_test();	
-		while(1);
- //  }
+	//	Pic_test();	
+   }
 }
 
 /*!

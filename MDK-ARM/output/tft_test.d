@@ -1,5 +1,4 @@
 .\output\tft_test.o: ..\Soft_Drive\tft_test.c
-.\output\tft_test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\output\tft_test.o: ..\Soft_Drive\lcd_driver.h
 .\output\tft_test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\output\tft_test.o: ..\..\..\Library\Firmware\CMSIS\GD\GD32F1x0\Include\gd32f1x0.h

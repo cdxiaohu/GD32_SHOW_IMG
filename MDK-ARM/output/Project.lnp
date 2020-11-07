@@ -30,7 +30,7 @@
 ".\output\gd32f1x0_opa.o"
 ".\output\gd32f1x0_eval.o"
 ".\output\delay.o"
-".\output\gui.o"
+".\output\gui_1.o"
 ".\output\lcd_driver.o"
 ".\output\tft_test.o"
 ".\output\startup_gd32f1x0.o"

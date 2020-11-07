@@ -19,6 +19,8 @@ Section Cross References
     main.o(i.main) refers to printfb.o(i.__0printf$bare) for __2printf
     main.o(i.main) refers to lcd_driver.o(i.lcd_clear) for lcd_clear
     main.o(i.main) refers to tft_test.o(i.font_test) for font_test
+    main.o(i.main) refers to tft_test.o(i.num_test) for num_test
+    main.o(i.main) refers to tft_test.o(i.draw_test) for draw_test
     main.o(i.main) refers to tft_test.o(i.color_test) for color_test
     main.o(i.test_status_led_init) refers to gd32f1x0_eval.o(i.gd_eval_ledinit) for gd_eval_ledinit
     main.o(i.test_status_led_init) refers to gd32f1x0_eval.o(i.gd_eval_ledoff) for gd_eval_ledoff
@@ -111,20 +113,20 @@ Section Cross References
     delay.o(i.delay_init) refers to delay.o(.data) for fac_us
     delay.o(i.delay_ms) refers to delay.o(.data) for fac_ms
     delay.o(i.delay_us) refers to delay.o(.data) for fac_us
-    gui.o(i.display_button_down) refers to gui.o(i.gui_draw_line) for gui_draw_line
-    gui.o(i.display_button_up) refers to gui.o(i.gui_draw_line) for gui_draw_line
-    gui.o(i.gui_box) refers to gui.o(i.gui_draw_line) for gui_draw_line
-    gui.o(i.gui_box2) refers to gui.o(i.gui_draw_line) for gui_draw_line
-    gui.o(i.gui_circle) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
-    gui.o(i.gui_draw_font_gbk16) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
-    gui.o(i.gui_draw_font_gbk16) refers to gui.o(.constdata) for asc16
-    gui.o(i.gui_draw_font_gbk24) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
-    gui.o(i.gui_draw_font_gbk24) refers to gui.o(.constdata) for asc16
-    gui.o(i.gui_draw_font_num32) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
-    gui.o(i.gui_draw_font_num32) refers to gui.o(.constdata) for sz32
-    gui.o(i.gui_draw_line) refers to lcd_driver.o(i.lcd_set_xy) for lcd_set_xy
-    gui.o(i.gui_draw_line) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
-    gui.o(i.gui_rect) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
+    gui_1.o(i.display_button_down) refers to gui_1.o(i.gui_draw_line) for gui_draw_line
+    gui_1.o(i.display_button_up) refers to gui_1.o(i.gui_draw_line) for gui_draw_line
+    gui_1.o(i.gui_box) refers to gui_1.o(i.gui_draw_line) for gui_draw_line
+    gui_1.o(i.gui_box2) refers to gui_1.o(i.gui_draw_line) for gui_draw_line
+    gui_1.o(i.gui_circle) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
+    gui_1.o(i.gui_draw_font_gbk16) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
+    gui_1.o(i.gui_draw_font_gbk16) refers to gui_1.o(.constdata) for asc16
+    gui_1.o(i.gui_draw_font_gbk24) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
+    gui_1.o(i.gui_draw_font_gbk24) refers to gui_1.o(.constdata) for asc16
+    gui_1.o(i.gui_draw_font_num32) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
+    gui_1.o(i.gui_draw_font_num32) refers to gui_1.o(.constdata) for sz32
+    gui_1.o(i.gui_draw_line) refers to lcd_driver.o(i.lcd_set_xy) for lcd_set_xy
+    gui_1.o(i.gui_draw_line) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
+    gui_1.o(i.gui_rect) refers to lcd_driver.o(i.gui_draw_point) for gui_draw_point
     lcd_driver.o(i.gui_draw_point) refers to lcd_driver.o(i.lcd_set_xy) for lcd_set_xy
     lcd_driver.o(i.gui_draw_point) refers to lcd_driver.o(i.lcd_write_data) for lcd_write_data
     lcd_driver.o(i.lcd_clear) refers to lcd_driver.o(i.lcd_set_region) for lcd_set_region
@@ -150,22 +152,22 @@ Section Cross References
     lcd_driver.o(i.spi0_init) refers to gd32f1x0_spi.o(i.spi_crc_polynomial_set) for spi_crc_polynomial_set
     lcd_driver.o(i.spi0_init) refers to gd32f1x0_spi.o(i.spi_enable) for spi_enable
     tft_test.o(i.color_test) refers to lcd_driver.o(i.lcd_clear) for lcd_clear
-    tft_test.o(i.color_test) refers to gui.o(i.gui_draw_font_gbk16) for gui_draw_font_gbk16
+    tft_test.o(i.color_test) refers to gui_1.o(i.gui_draw_font_gbk16) for gui_draw_font_gbk16
     tft_test.o(i.color_test) refers to delay.o(i.delay_ms) for delay_ms
     tft_test.o(i.draw_test) refers to lcd_driver.o(i.lcd_clear) for lcd_clear
-    tft_test.o(i.draw_test) refers to gui.o(i.gui_draw_font_gbk16) for gui_draw_font_gbk16
-    tft_test.o(i.draw_test) refers to gui.o(i.gui_box) for gui_box
-    tft_test.o(i.draw_test) refers to gui.o(i.gui_box2) for gui_box2
-    tft_test.o(i.draw_test) refers to gui.o(i.gui_rect) for gui_rect
-    tft_test.o(i.draw_test) refers to gui.o(i.gui_circle) for gui_circle
+    tft_test.o(i.draw_test) refers to gui_1.o(i.gui_draw_font_gbk16) for gui_draw_font_gbk16
+    tft_test.o(i.draw_test) refers to gui_1.o(i.gui_box) for gui_box
+    tft_test.o(i.draw_test) refers to gui_1.o(i.gui_box2) for gui_box2
+    tft_test.o(i.draw_test) refers to gui_1.o(i.gui_rect) for gui_rect
+    tft_test.o(i.draw_test) refers to gui_1.o(i.gui_circle) for gui_circle
     tft_test.o(i.draw_test) refers to delay.o(i.delay_ms) for delay_ms
     tft_test.o(i.font_test) refers to lcd_driver.o(i.lcd_clear) for lcd_clear
-    tft_test.o(i.font_test) refers to gui.o(i.gui_draw_font_gbk16) for gui_draw_font_gbk16
-    tft_test.o(i.font_test) refers to gui.o(i.gui_draw_font_gbk24) for gui_draw_font_gbk24
+    tft_test.o(i.font_test) refers to gui_1.o(i.gui_draw_font_gbk16) for gui_draw_font_gbk16
+    tft_test.o(i.font_test) refers to gui_1.o(i.gui_draw_font_gbk24) for gui_draw_font_gbk24
     tft_test.o(i.font_test) refers to delay.o(i.delay_ms) for delay_ms
     tft_test.o(i.num_test) refers to lcd_driver.o(i.lcd_clear) for lcd_clear
-    tft_test.o(i.num_test) refers to gui.o(i.gui_draw_font_gbk24) for gui_draw_font_gbk24
-    tft_test.o(i.num_test) refers to gui.o(i.gui_draw_font_num32) for gui_draw_font_num32
+    tft_test.o(i.num_test) refers to gui_1.o(i.gui_draw_font_gbk24) for gui_draw_font_gbk24
+    tft_test.o(i.num_test) refers to gui_1.o(i.gui_draw_font_num32) for gui_draw_font_num32
     tft_test.o(i.num_test) refers to delay.o(i.delay_ms) for delay_ms
     tft_test.o(i.num_test) refers to tft_test.o(.data) for num
     startup_gd32f1x0.o(RESET) refers to startup_gd32f1x0.o(STACK) for __initial_sp
@@ -1010,27 +1012,18 @@ Removing Unused input sections from the image.
     Removing delay.o(.revsh_text), (4 bytes).
     Removing delay.o(.rrx_text), (6 bytes).
     Removing delay.o(i.delay_us), (60 bytes).
-    Removing gui.o(.rev16_text), (4 bytes).
-    Removing gui.o(.revsh_text), (4 bytes).
-    Removing gui.o(.rrx_text), (6 bytes).
-    Removing gui.o(i.display_button_down), (148 bytes).
-    Removing gui.o(i.display_button_up), (148 bytes).
-    Removing gui.o(i.gui_box), (208 bytes).
-    Removing gui.o(i.gui_box2), (404 bytes).
-    Removing gui.o(i.gui_circle), (320 bytes).
-    Removing gui.o(i.gui_draw_font_num32), (148 bytes).
-    Removing gui.o(i.gui_draw_line), (204 bytes).
-    Removing gui.o(i.gui_rect), (68 bytes).
-    Removing gui.o(i.lcd_bgr2rgb), (26 bytes).
+    Removing gui_1.o(.rev16_text), (4 bytes).
+    Removing gui_1.o(.revsh_text), (4 bytes).
+    Removing gui_1.o(.rrx_text), (6 bytes).
+    Removing gui_1.o(i.display_button_down), (148 bytes).
+    Removing gui_1.o(i.display_button_up), (148 bytes).
+    Removing gui_1.o(i.lcd_bgr2rgb), (26 bytes).
     Removing lcd_driver.o(.rev16_text), (4 bytes).
     Removing lcd_driver.o(.revsh_text), (4 bytes).
     Removing lcd_driver.o(.rrx_text), (6 bytes).
     Removing tft_test.o(.rev16_text), (4 bytes).
     Removing tft_test.o(.revsh_text), (4 bytes).
     Removing tft_test.o(.rrx_text), (6 bytes).
-    Removing tft_test.o(i.draw_test), (160 bytes).
-    Removing tft_test.o(i.num_test), (136 bytes).
-    Removing tft_test.o(.data), (10 bytes).
     Removing startup_gd32f1x0.o(HEAP), (1024 bytes).
     Removing dadd.o(.text), (334 bytes).
     Removing dmul.o(.text), (228 bytes).
@@ -1039,7 +1032,7 @@ Removing Unused input sections from the image.
     Removing cdrcmple.o(.text), (48 bytes).
     Removing depilogue.o(.text), (186 bytes).
 
-598 unused section(s) (total 23570 bytes) removed from the image.
+589 unused section(s) (total 21912 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1051,33 +1044,33 @@ Image Symbol Table
 
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
@@ -1115,7 +1108,7 @@ Image Symbol Table
     ..\..\..\Library\Firmware\GD32F1x0_standard_peripheral\Source\gd32f1x0_wwdgt.c 0x00000000   Number         0  gd32f1x0_wwdgt.o ABSOLUTE
     ..\..\..\Library\Utilities\gd32f1x0_eval.c 0x00000000   Number         0  gd32f1x0_eval.o ABSOLUTE
     ..\Soft_Drive\delay.c                    0x00000000   Number         0  delay.o ABSOLUTE
-    ..\Soft_Drive\gui.c                      0x00000000   Number         0  gui.o ABSOLUTE
+    ..\Soft_Drive\gui.c                      0x00000000   Number         0  gui_1.o ABSOLUTE
     ..\Soft_Drive\lcd_driver.c               0x00000000   Number         0  lcd_driver.o ABSOLUTE
     ..\Soft_Drive\tft_test.c                 0x00000000   Number         0  tft_test.o ABSOLUTE
     ..\\..\\..\\Library\\Firmware\\CMSIS\\GD\\GD32F1x0\\Source\\system_gd32f1x0.c 0x00000000   Number         0  system_gd32f1x0.o ABSOLUTE
@@ -1143,7 +1136,7 @@ Image Symbol Table
     ..\\..\\..\\Library\\Firmware\\GD32F1x0_standard_peripheral\\Source\\gd32f1x0_wwdgt.c 0x00000000   Number         0  gd32f1x0_wwdgt.o ABSOLUTE
     ..\\..\\..\\Library\\Utilities\\gd32f1x0_eval.c 0x00000000   Number         0  gd32f1x0_eval.o ABSOLUTE
     ..\\Soft_Drive\\delay.c                  0x00000000   Number         0  delay.o ABSOLUTE
-    ..\\Soft_Drive\\gui.c                    0x00000000   Number         0  gui.o ABSOLUTE
+    ..\\Soft_Drive\\gui.c                    0x00000000   Number         0  gui_1.o ABSOLUTE
     ..\\Soft_Drive\\lcd_driver.c             0x00000000   Number         0  lcd_driver.o ABSOLUTE
     ..\\Soft_Drive\\tft_test.c               0x00000000   Number         0  tft_test.o ABSOLUTE
     ..\\main.c                               0x00000000   Number         0  main.o ABSOLUTE
@@ -1177,64 +1170,73 @@ Image Symbol Table
     i._printf_core                           0x080002a2   Section        0  printfb.o(i._printf_core)
     _printf_core                             0x080002a3   Thumb Code    34  printfb.o(i._printf_core)
     i.color_test                             0x080002c4   Section        0  tft_test.o(i.color_test)
-    i.delay_init                             0x0800031c   Section        0  delay.o(i.delay_init)
-    i.delay_ms                               0x0800035c   Section        0  delay.o(i.delay_ms)
-    i.flash_led                              0x08000398   Section        0  main.o(i.flash_led)
-    i.font_test                              0x080003e4   Section        0  tft_test.o(i.font_test)
-    i.fputc                                  0x08000720   Section        0  main.o(i.fputc)
-    i.gd_eval_COMinit                        0x08000744   Section        0  gd32f1x0_eval.o(i.gd_eval_COMinit)
-    i.gd_eval_ledinit                        0x08000800   Section        0  gd32f1x0_eval.o(i.gd_eval_ledinit)
-    i.gd_eval_ledoff                         0x08000854   Section        0  gd32f1x0_eval.o(i.gd_eval_ledoff)
-    i.gd_eval_ledon                          0x0800086c   Section        0  gd32f1x0_eval.o(i.gd_eval_ledon)
-    i.gpio_af_set                            0x08000884   Section        0  gd32f1x0_gpio.o(i.gpio_af_set)
-    i.gpio_mode_set                          0x080008ea   Section        0  gd32f1x0_gpio.o(i.gpio_mode_set)
-    i.gpio_output_options_set                0x0800093c   Section        0  gd32f1x0_gpio.o(i.gpio_output_options_set)
-    i.gui_draw_font_gbk16                    0x08000984   Section        0  gui.o(i.gui_draw_font_gbk16)
-    i.gui_draw_font_gbk24                    0x08000b30   Section        0  gui.o(i.gui_draw_font_gbk24)
-    i.gui_draw_point                         0x08000d28   Section        0  lcd_driver.o(i.gui_draw_point)
-    i.lcd_clear                              0x08000d48   Section        0  lcd_driver.o(i.lcd_clear)
-    i.lcd_init                               0x08000da4   Section        0  lcd_driver.o(i.lcd_init)
-    i.lcd_reset                              0x08000fbc   Section        0  lcd_driver.o(i.lcd_reset)
-    lcd_reset                                0x08000fbd   Thumb Code    30  lcd_driver.o(i.lcd_reset)
-    i.lcd_set_region                         0x08000fe0   Section        0  lcd_driver.o(i.lcd_set_region)
-    i.lcd_set_xy                             0x08001034   Section        0  lcd_driver.o(i.lcd_set_xy)
-    i.lcd_write_data                         0x08001060   Section        0  lcd_driver.o(i.lcd_write_data)
-    lcd_write_data                           0x08001061   Thumb Code    20  lcd_driver.o(i.lcd_write_data)
-    i.lcd_write_data_16bit                   0x0800107c   Section        0  lcd_driver.o(i.lcd_write_data_16bit)
-    lcd_write_data_16bit                     0x0800107d   Thumb Code    20  lcd_driver.o(i.lcd_write_data_16bit)
-    i.lcd_write_index                        0x08001090   Section        0  lcd_driver.o(i.lcd_write_index)
-    lcd_write_index                          0x08001091   Thumb Code    20  lcd_driver.o(i.lcd_write_index)
-    i.main                                   0x080010ac   Section        0  main.o(i.main)
-    i.rcu_clock_freq_get                     0x0800111c   Section        0  gd32f1x0_rcu.o(i.rcu_clock_freq_get)
-    i.rcu_periph_clock_enable                0x080013c4   Section        0  gd32f1x0_rcu.o(i.rcu_periph_clock_enable)
-    i.rcu_periph_reset_disable               0x080013e4   Section        0  gd32f1x0_rcu.o(i.rcu_periph_reset_disable)
-    i.rcu_periph_reset_enable                0x08001404   Section        0  gd32f1x0_rcu.o(i.rcu_periph_reset_enable)
-    i.spi0_init                              0x08001424   Section        0  lcd_driver.o(i.spi0_init)
-    spi0_init                                0x08001425   Thumb Code   150  lcd_driver.o(i.spi0_init)
-    i.spi_crc_polynomial_set                 0x080014cc   Section        0  gd32f1x0_spi.o(i.spi_crc_polynomial_set)
-    i.spi_enable                             0x080014d8   Section        0  gd32f1x0_spi.o(i.spi_enable)
-    i.spi_init                               0x080014e2   Section        0  gd32f1x0_spi.o(i.spi_init)
-    i.spi_write_byte                         0x08001508   Section        0  lcd_driver.o(i.spi_write_byte)
-    spi_write_byte                           0x08001509   Thumb Code    34  lcd_driver.o(i.spi_write_byte)
-    i.system_clock_72m_hxtal                 0x0800152c   Section        0  system_gd32f1x0.o(i.system_clock_72m_hxtal)
-    system_clock_72m_hxtal                   0x0800152d   Thumb Code   154  system_gd32f1x0.o(i.system_clock_72m_hxtal)
-    i.system_clock_config                    0x080015d0   Section        0  system_gd32f1x0.o(i.system_clock_config)
-    system_clock_config                      0x080015d1   Thumb Code     8  system_gd32f1x0.o(i.system_clock_config)
-    i.systick_config                         0x080015d8   Section        0  systick.o(i.systick_config)
-    i.test_status_led_init                   0x08001628   Section        0  main.o(i.test_status_led_init)
-    i.usart_baudrate_set                     0x0800165c   Section        0  gd32f1x0_usart.o(i.usart_baudrate_set)
-    i.usart_data_transmit                    0x080016e0   Section        0  gd32f1x0_usart.o(i.usart_data_transmit)
-    i.usart_deinit                           0x080016e8   Section        0  gd32f1x0_usart.o(i.usart_deinit)
-    i.usart_flag_get                         0x08001728   Section        0  gd32f1x0_usart.o(i.usart_flag_get)
-    i.usart_transfer_config                  0x08001738   Section        0  gd32f1x0_usart.o(i.usart_transfer_config)
-    .constdata                               0x08001790   Section     3992  gui.o(.constdata)
+    i.delay_init                             0x08000458   Section        0  delay.o(i.delay_init)
+    i.delay_ms                               0x08000498   Section        0  delay.o(i.delay_ms)
+    i.draw_test                              0x080004d4   Section        0  tft_test.o(i.draw_test)
+    i.flash_led                              0x08000574   Section        0  main.o(i.flash_led)
+    i.font_test                              0x080005c0   Section        0  tft_test.o(i.font_test)
+    i.fputc                                  0x080008fc   Section        0  main.o(i.fputc)
+    i.gd_eval_COMinit                        0x08000920   Section        0  gd32f1x0_eval.o(i.gd_eval_COMinit)
+    i.gd_eval_ledinit                        0x080009dc   Section        0  gd32f1x0_eval.o(i.gd_eval_ledinit)
+    i.gd_eval_ledoff                         0x08000a30   Section        0  gd32f1x0_eval.o(i.gd_eval_ledoff)
+    i.gd_eval_ledon                          0x08000a48   Section        0  gd32f1x0_eval.o(i.gd_eval_ledon)
+    i.gpio_af_set                            0x08000a60   Section        0  gd32f1x0_gpio.o(i.gpio_af_set)
+    i.gpio_mode_set                          0x08000ac6   Section        0  gd32f1x0_gpio.o(i.gpio_mode_set)
+    i.gpio_output_options_set                0x08000b18   Section        0  gd32f1x0_gpio.o(i.gpio_output_options_set)
+    i.gui_box                                0x08000b60   Section        0  gui_1.o(i.gui_box)
+    i.gui_box2                               0x08000c30   Section        0  gui_1.o(i.gui_box2)
+    i.gui_circle                             0x08000dc4   Section        0  gui_1.o(i.gui_circle)
+    i.gui_draw_font_gbk16                    0x08000f04   Section        0  gui_1.o(i.gui_draw_font_gbk16)
+    i.gui_draw_font_gbk24                    0x080010b0   Section        0  gui_1.o(i.gui_draw_font_gbk24)
+    i.gui_draw_font_num32                    0x080012a8   Section        0  gui_1.o(i.gui_draw_font_num32)
+    i.gui_draw_line                          0x0800133c   Section        0  gui_1.o(i.gui_draw_line)
+    i.gui_draw_point                         0x08001408   Section        0  lcd_driver.o(i.gui_draw_point)
+    i.gui_rect                               0x08001428   Section        0  gui_1.o(i.gui_rect)
+    i.lcd_clear                              0x0800146c   Section        0  lcd_driver.o(i.lcd_clear)
+    i.lcd_init                               0x080014c8   Section        0  lcd_driver.o(i.lcd_init)
+    i.lcd_reset                              0x080016e0   Section        0  lcd_driver.o(i.lcd_reset)
+    lcd_reset                                0x080016e1   Thumb Code    30  lcd_driver.o(i.lcd_reset)
+    i.lcd_set_region                         0x08001704   Section        0  lcd_driver.o(i.lcd_set_region)
+    i.lcd_set_xy                             0x08001758   Section        0  lcd_driver.o(i.lcd_set_xy)
+    i.lcd_write_data                         0x08001784   Section        0  lcd_driver.o(i.lcd_write_data)
+    lcd_write_data                           0x08001785   Thumb Code    20  lcd_driver.o(i.lcd_write_data)
+    i.lcd_write_data_16bit                   0x080017a0   Section        0  lcd_driver.o(i.lcd_write_data_16bit)
+    lcd_write_data_16bit                     0x080017a1   Thumb Code    20  lcd_driver.o(i.lcd_write_data_16bit)
+    i.lcd_write_index                        0x080017b4   Section        0  lcd_driver.o(i.lcd_write_index)
+    lcd_write_index                          0x080017b5   Thumb Code    20  lcd_driver.o(i.lcd_write_index)
+    i.main                                   0x080017d0   Section        0  main.o(i.main)
+    i.num_test                               0x08001848   Section        0  tft_test.o(i.num_test)
+    i.rcu_clock_freq_get                     0x080018d0   Section        0  gd32f1x0_rcu.o(i.rcu_clock_freq_get)
+    i.rcu_periph_clock_enable                0x08001b78   Section        0  gd32f1x0_rcu.o(i.rcu_periph_clock_enable)
+    i.rcu_periph_reset_disable               0x08001b98   Section        0  gd32f1x0_rcu.o(i.rcu_periph_reset_disable)
+    i.rcu_periph_reset_enable                0x08001bb8   Section        0  gd32f1x0_rcu.o(i.rcu_periph_reset_enable)
+    i.spi0_init                              0x08001bd8   Section        0  lcd_driver.o(i.spi0_init)
+    spi0_init                                0x08001bd9   Thumb Code   150  lcd_driver.o(i.spi0_init)
+    i.spi_crc_polynomial_set                 0x08001c80   Section        0  gd32f1x0_spi.o(i.spi_crc_polynomial_set)
+    i.spi_enable                             0x08001c8c   Section        0  gd32f1x0_spi.o(i.spi_enable)
+    i.spi_init                               0x08001c96   Section        0  gd32f1x0_spi.o(i.spi_init)
+    i.spi_write_byte                         0x08001cbc   Section        0  lcd_driver.o(i.spi_write_byte)
+    spi_write_byte                           0x08001cbd   Thumb Code    34  lcd_driver.o(i.spi_write_byte)
+    i.system_clock_72m_hxtal                 0x08001ce0   Section        0  system_gd32f1x0.o(i.system_clock_72m_hxtal)
+    system_clock_72m_hxtal                   0x08001ce1   Thumb Code   154  system_gd32f1x0.o(i.system_clock_72m_hxtal)
+    i.system_clock_config                    0x08001d84   Section        0  system_gd32f1x0.o(i.system_clock_config)
+    system_clock_config                      0x08001d85   Thumb Code     8  system_gd32f1x0.o(i.system_clock_config)
+    i.systick_config                         0x08001d8c   Section        0  systick.o(i.systick_config)
+    i.test_status_led_init                   0x08001ddc   Section        0  main.o(i.test_status_led_init)
+    i.usart_baudrate_set                     0x08001e10   Section        0  gd32f1x0_usart.o(i.usart_baudrate_set)
+    i.usart_data_transmit                    0x08001e94   Section        0  gd32f1x0_usart.o(i.usart_data_transmit)
+    i.usart_deinit                           0x08001e9c   Section        0  gd32f1x0_usart.o(i.usart_deinit)
+    i.usart_flag_get                         0x08001edc   Section        0  gd32f1x0_usart.o(i.usart_flag_get)
+    i.usart_transfer_config                  0x08001eec   Section        0  gd32f1x0_usart.o(i.usart_transfer_config)
+    .constdata                               0x08001f44   Section     3992  gui_1.o(.constdata)
     .data                                    0x20000000   Section        4  system_gd32f1x0.o(.data)
     .data                                    0x20000004   Section       98  gd32f1x0_eval.o(.data)
     .data                                    0x20000066   Section        4  delay.o(.data)
     fac_us                                   0x20000066   Data           1  delay.o(.data)
     fac_ms                                   0x20000068   Data           2  delay.o(.data)
-    .data                                    0x2000006c   Section        4  stdout.o(.data)
-    STACK                                    0x20000070   Section     1024  startup_gd32f1x0.o(STACK)
+    .data                                    0x2000006a   Section       10  tft_test.o(.data)
+    .data                                    0x20000074   Section        4  stdout.o(.data)
+    STACK                                    0x20000078   Section     1024  startup_gd32f1x0.o(STACK)
 
     Global Symbols
 
@@ -1325,47 +1327,55 @@ Image Symbol Table
     __scatterload_copy                       0x08000285   Thumb Code    14  handlers.o(i.__scatterload_copy)
     __scatterload_null                       0x08000293   Thumb Code     2  handlers.o(i.__scatterload_null)
     __scatterload_zeroinit                   0x08000295   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    color_test                               0x080002c5   Thumb Code    60  tft_test.o(i.color_test)
-    delay_init                               0x0800031d   Thumb Code    56  delay.o(i.delay_init)
-    delay_ms                                 0x0800035d   Thumb Code    56  delay.o(i.delay_ms)
-    flash_led                                0x08000399   Thumb Code    76  main.o(i.flash_led)
-    font_test                                0x080003e5   Thumb Code   384  tft_test.o(i.font_test)
-    fputc                                    0x08000721   Thumb Code    32  main.o(i.fputc)
-    gd_eval_COMinit                          0x08000745   Thumb Code   172  gd32f1x0_eval.o(i.gd_eval_COMinit)
-    gd_eval_ledinit                          0x08000801   Thumb Code    70  gd32f1x0_eval.o(i.gd_eval_ledinit)
-    gd_eval_ledoff                           0x08000855   Thumb Code    16  gd32f1x0_eval.o(i.gd_eval_ledoff)
-    gd_eval_ledon                            0x0800086d   Thumb Code    16  gd32f1x0_eval.o(i.gd_eval_ledon)
-    gpio_af_set                              0x08000885   Thumb Code   102  gd32f1x0_gpio.o(i.gpio_af_set)
-    gpio_mode_set                            0x080008eb   Thumb Code    82  gd32f1x0_gpio.o(i.gpio_mode_set)
-    gpio_output_options_set                  0x0800093d   Thumb Code    70  gd32f1x0_gpio.o(i.gpio_output_options_set)
-    gui_draw_font_gbk16                      0x08000985   Thumb Code   416  gui.o(i.gui_draw_font_gbk16)
-    gui_draw_font_gbk24                      0x08000b31   Thumb Code   490  gui.o(i.gui_draw_font_gbk24)
-    gui_draw_point                           0x08000d29   Thumb Code    30  lcd_driver.o(i.gui_draw_point)
-    lcd_clear                                0x08000d49   Thumb Code    78  lcd_driver.o(i.lcd_clear)
-    lcd_init                                 0x08000da5   Thumb Code   530  lcd_driver.o(i.lcd_init)
-    lcd_set_region                           0x08000fe1   Thumb Code    80  lcd_driver.o(i.lcd_set_region)
-    lcd_set_xy                               0x08001035   Thumb Code    42  lcd_driver.o(i.lcd_set_xy)
-    main                                     0x080010ad   Thumb Code    86  main.o(i.main)
-    rcu_clock_freq_get                       0x0800111d   Thumb Code   646  gd32f1x0_rcu.o(i.rcu_clock_freq_get)
-    rcu_periph_clock_enable                  0x080013c5   Thumb Code    28  gd32f1x0_rcu.o(i.rcu_periph_clock_enable)
-    rcu_periph_reset_disable                 0x080013e5   Thumb Code    28  gd32f1x0_rcu.o(i.rcu_periph_reset_disable)
-    rcu_periph_reset_enable                  0x08001405   Thumb Code    28  gd32f1x0_rcu.o(i.rcu_periph_reset_enable)
-    spi_crc_polynomial_set                   0x080014cd   Thumb Code    12  gd32f1x0_spi.o(i.spi_crc_polynomial_set)
-    spi_enable                               0x080014d9   Thumb Code    10  gd32f1x0_spi.o(i.spi_enable)
-    spi_init                                 0x080014e3   Thumb Code    38  gd32f1x0_spi.o(i.spi_init)
-    systick_config                           0x080015d9   Thumb Code    74  systick.o(i.systick_config)
-    test_status_led_init                     0x08001629   Thumb Code    52  main.o(i.test_status_led_init)
-    usart_baudrate_set                       0x0800165d   Thumb Code   128  gd32f1x0_usart.o(i.usart_baudrate_set)
-    usart_data_transmit                      0x080016e1   Thumb Code     8  gd32f1x0_usart.o(i.usart_data_transmit)
-    usart_deinit                             0x080016e9   Thumb Code    58  gd32f1x0_usart.o(i.usart_deinit)
-    usart_flag_get                           0x08001729   Thumb Code    16  gd32f1x0_usart.o(i.usart_flag_get)
-    usart_transfer_config                    0x08001739   Thumb Code    88  gd32f1x0_usart.o(i.usart_transfer_config)
-    asc16                                    0x08001790   Data        1521  gui.o(.constdata)
-    sz32                                     0x08001d81   Data        1921  gui.o(.constdata)
-    hz16                                     0x08002502   Data         175  gui.o(.constdata)
-    hz24                                     0x080025b1   Data         375  gui.o(.constdata)
-    Region$$Table$$Base                      0x08002728   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08002748   Number         0  anon$$obj.o(Region$$Table)
+    color_test                               0x080002c5   Thumb Code   338  tft_test.o(i.color_test)
+    delay_init                               0x08000459   Thumb Code    56  delay.o(i.delay_init)
+    delay_ms                                 0x08000499   Thumb Code    56  delay.o(i.delay_ms)
+    draw_test                                0x080004d5   Thumb Code   138  tft_test.o(i.draw_test)
+    flash_led                                0x08000575   Thumb Code    76  main.o(i.flash_led)
+    font_test                                0x080005c1   Thumb Code   384  tft_test.o(i.font_test)
+    fputc                                    0x080008fd   Thumb Code    32  main.o(i.fputc)
+    gd_eval_COMinit                          0x08000921   Thumb Code   172  gd32f1x0_eval.o(i.gd_eval_COMinit)
+    gd_eval_ledinit                          0x080009dd   Thumb Code    70  gd32f1x0_eval.o(i.gd_eval_ledinit)
+    gd_eval_ledoff                           0x08000a31   Thumb Code    16  gd32f1x0_eval.o(i.gd_eval_ledoff)
+    gd_eval_ledon                            0x08000a49   Thumb Code    16  gd32f1x0_eval.o(i.gd_eval_ledon)
+    gpio_af_set                              0x08000a61   Thumb Code   102  gd32f1x0_gpio.o(i.gpio_af_set)
+    gpio_mode_set                            0x08000ac7   Thumb Code    82  gd32f1x0_gpio.o(i.gpio_mode_set)
+    gpio_output_options_set                  0x08000b19   Thumb Code    70  gd32f1x0_gpio.o(i.gpio_output_options_set)
+    gui_box                                  0x08000b61   Thumb Code   202  gui_1.o(i.gui_box)
+    gui_box2                                 0x08000c31   Thumb Code   400  gui_1.o(i.gui_box2)
+    gui_circle                               0x08000dc5   Thumb Code   314  gui_1.o(i.gui_circle)
+    gui_draw_font_gbk16                      0x08000f05   Thumb Code   416  gui_1.o(i.gui_draw_font_gbk16)
+    gui_draw_font_gbk24                      0x080010b1   Thumb Code   490  gui_1.o(i.gui_draw_font_gbk24)
+    gui_draw_font_num32                      0x080012a9   Thumb Code   138  gui_1.o(i.gui_draw_font_num32)
+    gui_draw_line                            0x0800133d   Thumb Code   200  gui_1.o(i.gui_draw_line)
+    gui_draw_point                           0x08001409   Thumb Code    30  lcd_driver.o(i.gui_draw_point)
+    gui_rect                                 0x08001429   Thumb Code    64  gui_1.o(i.gui_rect)
+    lcd_clear                                0x0800146d   Thumb Code    78  lcd_driver.o(i.lcd_clear)
+    lcd_init                                 0x080014c9   Thumb Code   530  lcd_driver.o(i.lcd_init)
+    lcd_set_region                           0x08001705   Thumb Code    80  lcd_driver.o(i.lcd_set_region)
+    lcd_set_xy                               0x08001759   Thumb Code    42  lcd_driver.o(i.lcd_set_xy)
+    main                                     0x080017d1   Thumb Code    94  main.o(i.main)
+    num_test                                 0x08001849   Thumb Code   112  tft_test.o(i.num_test)
+    rcu_clock_freq_get                       0x080018d1   Thumb Code   646  gd32f1x0_rcu.o(i.rcu_clock_freq_get)
+    rcu_periph_clock_enable                  0x08001b79   Thumb Code    28  gd32f1x0_rcu.o(i.rcu_periph_clock_enable)
+    rcu_periph_reset_disable                 0x08001b99   Thumb Code    28  gd32f1x0_rcu.o(i.rcu_periph_reset_disable)
+    rcu_periph_reset_enable                  0x08001bb9   Thumb Code    28  gd32f1x0_rcu.o(i.rcu_periph_reset_enable)
+    spi_crc_polynomial_set                   0x08001c81   Thumb Code    12  gd32f1x0_spi.o(i.spi_crc_polynomial_set)
+    spi_enable                               0x08001c8d   Thumb Code    10  gd32f1x0_spi.o(i.spi_enable)
+    spi_init                                 0x08001c97   Thumb Code    38  gd32f1x0_spi.o(i.spi_init)
+    systick_config                           0x08001d8d   Thumb Code    74  systick.o(i.systick_config)
+    test_status_led_init                     0x08001ddd   Thumb Code    52  main.o(i.test_status_led_init)
+    usart_baudrate_set                       0x08001e11   Thumb Code   128  gd32f1x0_usart.o(i.usart_baudrate_set)
+    usart_data_transmit                      0x08001e95   Thumb Code     8  gd32f1x0_usart.o(i.usart_data_transmit)
+    usart_deinit                             0x08001e9d   Thumb Code    58  gd32f1x0_usart.o(i.usart_deinit)
+    usart_flag_get                           0x08001edd   Thumb Code    16  gd32f1x0_usart.o(i.usart_flag_get)
+    usart_transfer_config                    0x08001eed   Thumb Code    88  gd32f1x0_usart.o(i.usart_transfer_config)
+    asc16                                    0x08001f44   Data        1521  gui_1.o(.constdata)
+    sz32                                     0x08002535   Data        1921  gui_1.o(.constdata)
+    hz16                                     0x08002cb6   Data         175  gui_1.o(.constdata)
+    hz24                                     0x08002d65   Data         375  gui_1.o(.constdata)
+    Region$$Table$$Base                      0x08002edc   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08002efc   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_gd32f1x0.o(.data)
     GPIO_PORT                                0x20000004   Data          16  gd32f1x0_eval.o(.data)
     GPIO_PIN                                 0x20000014   Data           8  gd32f1x0_eval.o(.data)
@@ -1380,8 +1390,9 @@ Image Symbol Table
     KEY_PORT_SOURCE                          0x20000054   Data           6  gd32f1x0_eval.o(.data)
     KEY_PIN_SOURCE                           0x2000005a   Data           6  gd32f1x0_eval.o(.data)
     KEY_IRQn                                 0x20000060   Data           6  gd32f1x0_eval.o(.data)
-    __stdout                                 0x2000006c   Data           4  stdout.o(.data)
-    __initial_sp                             0x20000470   Data           0  startup_gd32f1x0.o(STACK)
+    num                                      0x2000006a   Data          10  tft_test.o(.data)
+    __stdout                                 0x20000074   Data           4  stdout.o(.data)
+    __initial_sp                             0x20000478   Data           0  startup_gd32f1x0.o(STACK)
 
 
 
@@ -1391,92 +1402,100 @@ Memory Map of the image
 
   Image Entry point : 0x08000169
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000027b8, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00002f74, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00002748, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00002efc, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x08000000   0x00000168   Data   RO         4162    RESET               startup_gd32f1x0.o
-    0x08000168   0x08000168   0x00000000   Code   RO         4167  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000168   0x08000168   0x00000004   Code   RO         4430    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x0800016c   0x0800016c   0x00000004   Code   RO         4433    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000170   0x08000170   0x00000000   Code   RO         4435    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000170   0x08000170   0x00000000   Code   RO         4437    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000170   0x08000170   0x00000008   Code   RO         4438    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000178   0x08000178   0x00000000   Code   RO         4440    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000178   0x08000178   0x00000000   Code   RO         4442    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000178   0x08000178   0x00000004   Code   RO         4431    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x0800017c   0x0800017c   0x00000024   Code   RO         4163    .text               startup_gd32f1x0.o
-    0x080001a0   0x080001a0   0x00000024   Code   RO         4460    .text               mc_w.l(init.o)
+    0x08000000   0x08000000   0x00000168   Data   RO         4067    RESET               startup_gd32f1x0.o
+    0x08000168   0x08000168   0x00000000   Code   RO         4072  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000168   0x08000168   0x00000004   Code   RO         4335    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800016c   0x0800016c   0x00000004   Code   RO         4338    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000170   0x08000170   0x00000000   Code   RO         4340    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000170   0x08000170   0x00000000   Code   RO         4342    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000170   0x08000170   0x00000008   Code   RO         4343    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000178   0x08000178   0x00000000   Code   RO         4345    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000178   0x08000178   0x00000000   Code   RO         4347    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000178   0x08000178   0x00000004   Code   RO         4336    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x0800017c   0x0800017c   0x00000024   Code   RO         4068    .text               startup_gd32f1x0.o
+    0x080001a0   0x080001a0   0x00000024   Code   RO         4365    .text               mc_w.l(init.o)
     0x080001c4   0x080001c4   0x00000028   Code   RO          163    i.NVIC_SetPriority  systick.o
     0x080001ec   0x080001ec   0x00000088   Code   RO          211    i.SystemInit        system_gd32f1x0.o
-    0x08000274   0x08000274   0x00000010   Code   RO         4171    i.__0printf$bare    mc_w.l(printfb.o)
-    0x08000284   0x08000284   0x0000000e   Code   RO         4472    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08000292   0x08000292   0x00000002   Code   RO         4473    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08000294   0x08000294   0x0000000e   Code   RO         4474    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x080002a2   0x080002a2   0x00000022   Code   RO         4178    i._printf_core      mc_w.l(printfb.o)
-    0x080002c4   0x080002c4   0x00000058   Code   RO         4109    i.color_test        tft_test.o
-    0x0800031c   0x0800031c   0x00000040   Code   RO         3891    i.delay_init        delay.o
-    0x0800035c   0x0800035c   0x0000003c   Code   RO         3892    i.delay_ms          delay.o
-    0x08000398   0x08000398   0x0000004c   Code   RO            4    i.flash_led         main.o
-    0x080003e4   0x080003e4   0x0000033c   Code   RO         4111    i.font_test         tft_test.o
-    0x08000720   0x08000720   0x00000024   Code   RO            5    i.fputc             main.o
-    0x08000744   0x08000744   0x000000bc   Code   RO         3825    i.gd_eval_COMinit   gd32f1x0_eval.o
-    0x08000800   0x08000800   0x00000054   Code   RO         3828    i.gd_eval_ledinit   gd32f1x0_eval.o
-    0x08000854   0x08000854   0x00000018   Code   RO         3829    i.gd_eval_ledoff    gd32f1x0_eval.o
-    0x0800086c   0x0800086c   0x00000018   Code   RO         3830    i.gd_eval_ledon     gd32f1x0_eval.o
-    0x08000884   0x08000884   0x00000066   Code   RO         1575    i.gpio_af_set       gd32f1x0_gpio.o
-    0x080008ea   0x080008ea   0x00000052   Code   RO         1582    i.gpio_mode_set     gd32f1x0_gpio.o
-    0x0800093c   0x0800093c   0x00000046   Code   RO         1584    i.gpio_output_options_set  gd32f1x0_gpio.o
-    0x08000982   0x08000982   0x00000002   PAD
-    0x08000984   0x08000984   0x000001ac   Code   RO         3937    i.gui_draw_font_gbk16  gui.o
-    0x08000b30   0x08000b30   0x000001f8   Code   RO         3938    i.gui_draw_font_gbk24  gui.o
-    0x08000d28   0x08000d28   0x0000001e   Code   RO         4031    i.gui_draw_point    lcd_driver.o
-    0x08000d46   0x08000d46   0x00000002   PAD
-    0x08000d48   0x08000d48   0x0000005c   Code   RO         4032    i.lcd_clear         lcd_driver.o
-    0x08000da4   0x08000da4   0x00000218   Code   RO         4033    i.lcd_init          lcd_driver.o
-    0x08000fbc   0x08000fbc   0x00000024   Code   RO         4034    i.lcd_reset         lcd_driver.o
-    0x08000fe0   0x08000fe0   0x00000054   Code   RO         4035    i.lcd_set_region    lcd_driver.o
-    0x08001034   0x08001034   0x0000002a   Code   RO         4036    i.lcd_set_xy        lcd_driver.o
-    0x0800105e   0x0800105e   0x00000002   PAD
-    0x08001060   0x08001060   0x0000001c   Code   RO         4037    i.lcd_write_data    lcd_driver.o
-    0x0800107c   0x0800107c   0x00000014   Code   RO         4038    i.lcd_write_data_16bit  lcd_driver.o
-    0x08001090   0x08001090   0x0000001c   Code   RO         4039    i.lcd_write_index   lcd_driver.o
-    0x080010ac   0x080010ac   0x00000070   Code   RO            6    i.main              main.o
-    0x0800111c   0x0800111c   0x000002a8   Code   RO         1997    i.rcu_clock_freq_get  gd32f1x0_rcu.o
-    0x080013c4   0x080013c4   0x00000020   Code   RO         2017    i.rcu_periph_clock_enable  gd32f1x0_rcu.o
-    0x080013e4   0x080013e4   0x00000020   Code   RO         2018    i.rcu_periph_reset_disable  gd32f1x0_rcu.o
-    0x08001404   0x08001404   0x00000020   Code   RO         2019    i.rcu_periph_reset_enable  gd32f1x0_rcu.o
-    0x08001424   0x08001424   0x000000a8   Code   RO         4040    i.spi0_init         lcd_driver.o
-    0x080014cc   0x080014cc   0x0000000c   Code   RO         2479    i.spi_crc_polynomial_set  gd32f1x0_spi.o
-    0x080014d8   0x080014d8   0x0000000a   Code   RO         2483    i.spi_enable        gd32f1x0_spi.o
-    0x080014e2   0x080014e2   0x00000026   Code   RO         2491    i.spi_init          gd32f1x0_spi.o
-    0x08001508   0x08001508   0x00000022   Code   RO         4041    i.spi_write_byte    lcd_driver.o
-    0x0800152a   0x0800152a   0x00000002   PAD
-    0x0800152c   0x0800152c   0x000000a4   Code   RO          212    i.system_clock_72m_hxtal  system_gd32f1x0.o
-    0x080015d0   0x080015d0   0x00000008   Code   RO          213    i.system_clock_config  system_gd32f1x0.o
-    0x080015d8   0x080015d8   0x00000050   Code   RO          166    i.systick_config    systick.o
-    0x08001628   0x08001628   0x00000034   Code   RO            7    i.test_status_led_init  main.o
-    0x0800165c   0x0800165c   0x00000084   Code   RO         3359    i.usart_baudrate_set  gd32f1x0_usart.o
-    0x080016e0   0x080016e0   0x00000008   Code   RO         3366    i.usart_data_transmit  gd32f1x0_usart.o
-    0x080016e8   0x080016e8   0x00000040   Code   RO         3367    i.usart_deinit      gd32f1x0_usart.o
-    0x08001728   0x08001728   0x00000010   Code   RO         3375    i.usart_flag_get    gd32f1x0_usart.o
-    0x08001738   0x08001738   0x00000058   Code   RO         3412    i.usart_transfer_config  gd32f1x0_usart.o
-    0x08001790   0x08001790   0x00000f98   Data   RO         3943    .constdata          gui.o
-    0x08002728   0x08002728   0x00000020   Data   RO         4470    Region$$Table       anon$$obj.o
+    0x08000274   0x08000274   0x00000010   Code   RO         4076    i.__0printf$bare    mc_w.l(printfb.o)
+    0x08000284   0x08000284   0x0000000e   Code   RO         4377    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08000292   0x08000292   0x00000002   Code   RO         4378    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08000294   0x08000294   0x0000000e   Code   RO         4379    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080002a2   0x080002a2   0x00000022   Code   RO         4083    i._printf_core      mc_w.l(printfb.o)
+    0x080002c4   0x080002c4   0x00000194   Code   RO         4014    i.color_test        tft_test.o
+    0x08000458   0x08000458   0x00000040   Code   RO         3802    i.delay_init        delay.o
+    0x08000498   0x08000498   0x0000003c   Code   RO         3803    i.delay_ms          delay.o
+    0x080004d4   0x080004d4   0x000000a0   Code   RO         4015    i.draw_test         tft_test.o
+    0x08000574   0x08000574   0x0000004c   Code   RO            4    i.flash_led         main.o
+    0x080005c0   0x080005c0   0x0000033c   Code   RO         4016    i.font_test         tft_test.o
+    0x080008fc   0x080008fc   0x00000024   Code   RO            5    i.fputc             main.o
+    0x08000920   0x08000920   0x000000bc   Code   RO         3736    i.gd_eval_COMinit   gd32f1x0_eval.o
+    0x080009dc   0x080009dc   0x00000054   Code   RO         3739    i.gd_eval_ledinit   gd32f1x0_eval.o
+    0x08000a30   0x08000a30   0x00000018   Code   RO         3740    i.gd_eval_ledoff    gd32f1x0_eval.o
+    0x08000a48   0x08000a48   0x00000018   Code   RO         3741    i.gd_eval_ledon     gd32f1x0_eval.o
+    0x08000a60   0x08000a60   0x00000066   Code   RO         1486    i.gpio_af_set       gd32f1x0_gpio.o
+    0x08000ac6   0x08000ac6   0x00000052   Code   RO         1493    i.gpio_mode_set     gd32f1x0_gpio.o
+    0x08000b18   0x08000b18   0x00000046   Code   RO         1495    i.gpio_output_options_set  gd32f1x0_gpio.o
+    0x08000b5e   0x08000b5e   0x00000002   PAD
+    0x08000b60   0x08000b60   0x000000d0   Code   RO         3842    i.gui_box           gui_1.o
+    0x08000c30   0x08000c30   0x00000194   Code   RO         3843    i.gui_box2          gui_1.o
+    0x08000dc4   0x08000dc4   0x00000140   Code   RO         3844    i.gui_circle        gui_1.o
+    0x08000f04   0x08000f04   0x000001ac   Code   RO         3845    i.gui_draw_font_gbk16  gui_1.o
+    0x080010b0   0x080010b0   0x000001f8   Code   RO         3846    i.gui_draw_font_gbk24  gui_1.o
+    0x080012a8   0x080012a8   0x00000094   Code   RO         3847    i.gui_draw_font_num32  gui_1.o
+    0x0800133c   0x0800133c   0x000000cc   Code   RO         3848    i.gui_draw_line     gui_1.o
+    0x08001408   0x08001408   0x0000001e   Code   RO         3936    i.gui_draw_point    lcd_driver.o
+    0x08001426   0x08001426   0x00000002   PAD
+    0x08001428   0x08001428   0x00000044   Code   RO         3849    i.gui_rect          gui_1.o
+    0x0800146c   0x0800146c   0x0000005c   Code   RO         3937    i.lcd_clear         lcd_driver.o
+    0x080014c8   0x080014c8   0x00000218   Code   RO         3938    i.lcd_init          lcd_driver.o
+    0x080016e0   0x080016e0   0x00000024   Code   RO         3939    i.lcd_reset         lcd_driver.o
+    0x08001704   0x08001704   0x00000054   Code   RO         3940    i.lcd_set_region    lcd_driver.o
+    0x08001758   0x08001758   0x0000002a   Code   RO         3941    i.lcd_set_xy        lcd_driver.o
+    0x08001782   0x08001782   0x00000002   PAD
+    0x08001784   0x08001784   0x0000001c   Code   RO         3942    i.lcd_write_data    lcd_driver.o
+    0x080017a0   0x080017a0   0x00000014   Code   RO         3943    i.lcd_write_data_16bit  lcd_driver.o
+    0x080017b4   0x080017b4   0x0000001c   Code   RO         3944    i.lcd_write_index   lcd_driver.o
+    0x080017d0   0x080017d0   0x00000078   Code   RO            6    i.main              main.o
+    0x08001848   0x08001848   0x00000088   Code   RO         4017    i.num_test          tft_test.o
+    0x080018d0   0x080018d0   0x000002a8   Code   RO         1908    i.rcu_clock_freq_get  gd32f1x0_rcu.o
+    0x08001b78   0x08001b78   0x00000020   Code   RO         1928    i.rcu_periph_clock_enable  gd32f1x0_rcu.o
+    0x08001b98   0x08001b98   0x00000020   Code   RO         1929    i.rcu_periph_reset_disable  gd32f1x0_rcu.o
+    0x08001bb8   0x08001bb8   0x00000020   Code   RO         1930    i.rcu_periph_reset_enable  gd32f1x0_rcu.o
+    0x08001bd8   0x08001bd8   0x000000a8   Code   RO         3945    i.spi0_init         lcd_driver.o
+    0x08001c80   0x08001c80   0x0000000c   Code   RO         2390    i.spi_crc_polynomial_set  gd32f1x0_spi.o
+    0x08001c8c   0x08001c8c   0x0000000a   Code   RO         2394    i.spi_enable        gd32f1x0_spi.o
+    0x08001c96   0x08001c96   0x00000026   Code   RO         2402    i.spi_init          gd32f1x0_spi.o
+    0x08001cbc   0x08001cbc   0x00000022   Code   RO         3946    i.spi_write_byte    lcd_driver.o
+    0x08001cde   0x08001cde   0x00000002   PAD
+    0x08001ce0   0x08001ce0   0x000000a4   Code   RO          212    i.system_clock_72m_hxtal  system_gd32f1x0.o
+    0x08001d84   0x08001d84   0x00000008   Code   RO          213    i.system_clock_config  system_gd32f1x0.o
+    0x08001d8c   0x08001d8c   0x00000050   Code   RO          166    i.systick_config    systick.o
+    0x08001ddc   0x08001ddc   0x00000034   Code   RO            7    i.test_status_led_init  main.o
+    0x08001e10   0x08001e10   0x00000084   Code   RO         3270    i.usart_baudrate_set  gd32f1x0_usart.o
+    0x08001e94   0x08001e94   0x00000008   Code   RO         3277    i.usart_data_transmit  gd32f1x0_usart.o
+    0x08001e9c   0x08001e9c   0x00000040   Code   RO         3278    i.usart_deinit      gd32f1x0_usart.o
+    0x08001edc   0x08001edc   0x00000010   Code   RO         3286    i.usart_flag_get    gd32f1x0_usart.o
+    0x08001eec   0x08001eec   0x00000058   Code   RO         3323    i.usart_transfer_config  gd32f1x0_usart.o
+    0x08001f44   0x08001f44   0x00000f98   Data   RO         3851    .constdata          gui_1.o
+    0x08002edc   0x08002edc   0x00000020   Data   RO         4375    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08002748, Size: 0x00000470, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08002efc, Size: 0x00000478, Max: 0x00002000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08002748   0x00000004   Data   RW          214    .data               system_gd32f1x0.o
-    0x20000004   0x0800274c   0x00000062   Data   RW         3832    .data               gd32f1x0_eval.o
-    0x20000066   0x080027ae   0x00000004   Data   RW         3894    .data               delay.o
-    0x2000006a   0x080027b2   0x00000002   PAD
-    0x2000006c   0x080027b4   0x00000004   Data   RW         4444    .data               mc_w.l(stdout.o)
-    0x20000070        -       0x00000400   Zero   RW         4160    STACK               startup_gd32f1x0.o
+    0x20000000   0x08002efc   0x00000004   Data   RW          214    .data               system_gd32f1x0.o
+    0x20000004   0x08002f00   0x00000062   Data   RW         3743    .data               gd32f1x0_eval.o
+    0x20000066   0x08002f62   0x00000004   Data   RW         3805    .data               delay.o
+    0x2000006a   0x08002f66   0x0000000a   Data   RW         4018    .data               tft_test.o
+    0x20000074   0x08002f70   0x00000004   Data   RW         4349    .data               mc_w.l(stdout.o)
+    0x20000078        -       0x00000400   Zero   RW         4065    STACK               startup_gd32f1x0.o
 
 
 ==============================================================================
@@ -1486,25 +1505,25 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       124         12          0          4          0       1240   delay.o
-         0          0          0          0          0       5036   gd32f1x0_adc.o
-       320         46          0         98          0       5352   gd32f1x0_eval.o
-       254          0          0          0          0       2552   gd32f1x0_gpio.o
-       776         54          0          0          0      17308   gd32f1x0_rcu.o
-        60          0          0          0          0       2401   gd32f1x0_spi.o
-       308         16          0          0          0      10671   gd32f1x0_usart.o
-       932         26       3992          0          0       2963   gui.o
-      1098         64          0          0          0       6414   lcd_driver.o
-       276         30          0          0          0      12066   main.o
+       124         12          0          4          0       1268   delay.o
+         0          0          0          0          0       5044   gd32f1x0_adc.o
+       320         46          0         98          0       5416   gd32f1x0_eval.o
+       254          0          0          0          0       2580   gd32f1x0_gpio.o
+       776         54          0          0          0      17368   gd32f1x0_rcu.o
+        60          0          0          0          0       2433   gd32f1x0_spi.o
+       308         16          0          0          0      10723   gd32f1x0_usart.o
+      2284         60       3992          0          0       7910   gui_1.o
+      1098         64          0          0          0       6518   lcd_driver.o
+       284         30          0          0          0      35590   main.o
         36          8        360          0       1024        896   startup_gd32f1x0.o
-       308         28          0          4          0      29719   system_gd32f1x0.o
+       308         28          0          4          0       2095   system_gd32f1x0.o
        120         14          0          0          0      24924   systick.o
-       916        472          0          0          0       1525   tft_test.o
+      1528        556          0         10          0       2858   tft_test.o
 
     ----------------------------------------------------------------------
-      5536        770       4384        108       1024     123067   Object Totals
+      7508        888       4384        116       1024     125623   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         8          0          0          2          0          0   (incl. Padding)
+         8          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1543,15 +1562,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5672        794       4384        112       1024     121151   Grand Totals
-      5672        794       4384        112       1024     121151   ELF Image Totals
-      5672        794       4384        112          0          0   ROM Totals
+      7644        912       4384        120       1024     123291   Grand Totals
+      7644        912       4384        120       1024     123291   ELF Image Totals
+      7644        912       4384        120          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                10056 (   9.82kB)
-    Total RW  Size (RW Data + ZI Data)              1136 (   1.11kB)
-    Total ROM Size (Code + RO Data + RW Data)      10168 (   9.93kB)
+    Total RO  Size (Code + RO Data)                12028 (  11.75kB)
+    Total RW  Size (RW Data + ZI Data)              1144 (   1.12kB)
+    Total ROM Size (Code + RO Data + RW Data)      12148 (  11.86kB)
 
 ==============================================================================
 
