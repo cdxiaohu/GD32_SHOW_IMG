@@ -39,4 +39,8 @@ void gui_draw_font_gbk24(uint16_t x,uint16_t y,uint16_t fc,uint16_t bc,char *s);
 /* gui draw font to num32 */
 void gui_draw_font_num32(uint16_t x,uint16_t y,uint16_t fc,uint16_t bc,uint16_t num);
 
+void gui_draw_bmp16(uint16_t x,uint16_t y,const unsigned char *p); //ÏÔÊ¾40*40 QQÍ¼Æ¬
+
+void gui_draw_pic(uint16_t x,uint16_t y,uint16_t w,uint16_t h,const unsigned char *p);
+
 #endif /* GUI_H */

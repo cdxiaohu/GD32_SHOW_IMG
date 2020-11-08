@@ -14,6 +14,7 @@
 #include "gui.h"
 #include "delay.h"
 #include "tft_test.h"
+//#include "pic.h"
 
 unsigned char num[10] = {0,1,2,3,4,5,6,7,8,9};
 
@@ -97,9 +98,9 @@ void font_test(void)
 */
 void color_test(void)
 {
-    __O  uint8_t i=2;
+ //   __O  uint8_t i=2;
 
-    while(i--){
+//    while(i--){
         /* lcd display color test */
         lcd_clear(WHITE);
         gui_draw_font_gbk16(20,50,BLACK,WHITE,"Color Display Test");
@@ -135,7 +136,7 @@ void color_test(void)
         gui_draw_font_gbk16(20,50,BLUE,YELLOW,"Color Display Test");
         gui_draw_font_gbk16(100,100,BLUE,YELLOW,"Yellow");
         delay_ms(1000);
-    }
+ //   }
 }
 
 /*!
@@ -162,4 +163,18 @@ void draw_test(void)
     gui_circle(120,160,80,RED);
    
     delay_ms(1000);
+}
+
+void Pic_test(void)
+{
+	//DrawTestPage("≤‚ ‘7:Õº∆¨œ‘ æ≤‚ ‘");
+	//LCD_Fill(0,20,lcddev.width,lcddev.height-20,WHITE);
+	//	gui_draw_bmp16(30,30,gImage_qq);
+	
+//	Show_Str(30+12,75,BLUE,YELLOW,"QQ",16,1);
+//	Gui_Drawbmp16(90,30,gImage_qq);
+//	Show_Str(90+12,75,BLUE,YELLOW,"QQ",16,1);
+//	Gui_Drawbmp16(150,30,gImage_qq);
+//	Show_Str(150+12,75,BLUE,YELLOW,"QQ",16,1);
+		delay_ms(1200);
 }

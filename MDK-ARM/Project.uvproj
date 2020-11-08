@@ -352,7 +352,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>0</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -378,7 +378,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,GD32F130_150</Define>
               <Undefine></Undefine>
-              <IncludePath>..\;..\Soft_Drive;..\..\..\Library\Firmware\CMSIS\GD\GD32F1x0\Include;..\..\..\Library\Firmware\GD32F1x0_standard_peripheral\Include;..\..\..\Library\Utilities;..\..\..\Library\Firmware\CMSIS</IncludePath>
+              <IncludePath>..\;..\Soft_Drive;..\..\..\Library\Firmware\CMSIS\GD\GD32F1x0\Include;..\..\..\Library\Firmware\GD32F1x0_standard_peripheral\Include;..\..\..\Library\Utilities;..\..\..\Library\Firmware\CMSIS;..\..\22_SPI_TFT_LCD_Driver_img_show</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

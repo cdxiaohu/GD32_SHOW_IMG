@@ -14,20 +14,12 @@
 #include "lcd_driver.h"
 #include "delay.h"
 
-#ifdef H_VIEW
-    #define X_MAX_PIXEL         (uint16_t)320
-    #define Y_MAX_PIXEL         (uint16_t)240
-#else
-    #define X_MAX_PIXEL         (uint16_t)240
-    #define Y_MAX_PIXEL         (uint16_t)320
-#endif
-
 static uint8_t spi_write_byte(uint32_t spi_periph,uint8_t byte);
 static void spi0_init(void);
 static void lcd_write_index(uint8_t index);
 static void lcd_write_data(uint8_t data);
 
-static void lcd_write_data_16bit(uint8_t datah,uint8_t datal);
+//static void lcd_write_data_16bit(uint8_t datah,uint8_t datal);
 static void lcd_reset(void);
 
 /*!
@@ -93,8 +85,10 @@ static void spi0_init(void)
 */
 static void lcd_write_index(uint8_t index)
 {
+//		LCD_CS_CLR;
     LCD_RS_CLR;
     spi_write_byte(SPI0,index);
+//		LCD_CS_SET;
 }
 
 /*!
@@ -116,7 +110,7 @@ static void lcd_write_data(uint8_t data)
     \param[out] none
     \retval     none
 */
-static void lcd_write_data_16bit(uint8_t datah,uint8_t datal)
+void lcd_write_data_16bit(uint8_t datah,uint8_t datal)
 {
     lcd_write_data(datah);
     lcd_write_data(datal);

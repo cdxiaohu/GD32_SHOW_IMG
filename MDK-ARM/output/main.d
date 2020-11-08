@@ -37,3 +37,5 @@
 .\output\main.o: ..\Soft_Drive\tft_test.h
 .\output\main.o: ..\Soft_Drive\delay.h
 .\output\main.o: ..\systick.h
+.\output\main.o: ..\pic.h
+.\output\main.o: ..\Soft_Drive\gui.h

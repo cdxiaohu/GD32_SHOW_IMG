@@ -16,6 +16,8 @@
 #include "tft_test.h"
 #include "delay.h"
 #include "systick.h"
+#include "pic.h"
+#include "gui.h"
 
 void test_status_led_init(void);
 void flash_led(uint32_t times);
@@ -53,19 +55,38 @@ int main(void)
     lcd_init();
 		printf("sys init success \n");
 		//while (RESET == usart_flag_get(USART0 , USART_STAT_TC));
-	
+		lcd_clear(BLUE);
+		/*gui_box(0,0,20,20,RED);
+		gui_box2(20,20,20,20,BLACK);
+		gui_circle(40,40,20,YELLOW);
+		gui_draw_font_gbk16(20,0,GREEN,YELLOW,"hello world");
+		gui_draw_font_gbk24(20,80,GREEN,BLACK,"hello world");
+		gui_draw_font_num32(20,100,GREEN,BLACK,3);
+		gui_draw_line(20,164,256,174,RED);
+		gui_rect(20,180,50,200,GREEN);*/
+	//	gui_draw_bmp16(30,30,gImage_qq);
+	//	gui_draw_bmp16(90,30,gImage_qq);
+	//	gui_draw_bmp16(150,30,gImage_qq_logo);
+	//	gui_draw_pic(30,30,40,40,gImage_qq_logo);
+		gui_draw_pic(0+14,14,106,80,gImage_10680);
+		gui_draw_pic(107+14,14,106,80,gImage_10680_3);
+		gui_draw_pic(0+14,14+81,106,80,gImage_10680_2);
+		//gui_draw_pic(0+14+107,14+81,106,80,gImage_10680_4);
     while(1){
         /* clear the lcd to blue*/
-        lcd_clear(BLUE);
+        
         /* font display test*/
-        font_test();
+   //     font_test();
         /* num display test*/
-        num_test();
+   //     num_test();
         /* draw display test*/
-        draw_test();
+ //       draw_test();
         /* color display test*/
-  	    color_test();
-	//	Pic_test();	
+  //	    color_test();
+		//	display_button_down(0,30,50,50);
+		//	display_button_up(0,30,50,50);
+				
+				//Pic_test();	
    }
 }
 

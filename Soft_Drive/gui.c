@@ -495,3 +495,44 @@ void gui_draw_font_num32(uint16_t x,uint16_t y,uint16_t fc,uint16_t bc,uint16_t 
     }
     LCD_CS_SET;
 }
+
+/*****************************************************************************
+ * @name       :void Gui_Drawbmp16(u16 x,u16 y,const unsigned char *p)
+ * @date       :2018-08-09 
+ * @function   :Display a 16-bit BMP image
+ * @parameters :x:the bebinning x coordinate of the BMP image
+                y:the bebinning y coordinate of the BMP image
+								p:the start address of image array
+ * @retvalue   :None
+******************************************************************************/ 
+void gui_draw_bmp16(uint16_t x,uint16_t y,const unsigned char *p) //显示40*40 QQ图片
+{
+  	int i; 
+	unsigned char picH,picL; 
+	lcd_set_region(x,y,x+40-1,y+40-1);//窗口设置
+	LCD_CS_CLR;
+  for(i=0;i<40*40;i++)
+	{	
+	 	picL=*(p+i*2);	//数据低位在前
+		picH=*(p+i*2+1);				
+		lcd_write_data_16bit(picH,picL);  						
+	}	
+	lcd_set_region(0,0,X_MAX_PIXEL-1,Y_MAX_PIXEL-1);//恢复显示窗口为全屏	
+	LCD_CS_SET;
+}
+
+void gui_draw_pic(uint16_t x,uint16_t y,uint16_t w,uint16_t h,const unsigned char *p) 
+{
+  	int i; 
+	unsigned char picH,picL; 
+	lcd_set_region(x,y,x+w-1,y+h-1);//窗口设置
+	LCD_CS_CLR;
+  for(i=0;i<w*h;i++)
+	{	
+	 	picL=*(p+i*2);	//数据低位在前
+		picH=*(p+i*2+1);				
+		lcd_write_data_16bit(picH,picL);  						
+	}	
+	lcd_set_region(0,0,X_MAX_PIXEL-1,Y_MAX_PIXEL-1);//恢复显示窗口为全屏	
+	LCD_CS_SET;
+}

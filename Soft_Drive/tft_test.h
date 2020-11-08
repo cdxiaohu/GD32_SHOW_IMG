@@ -24,4 +24,6 @@ void draw_test(void);
 /* color display test */
 void color_test(void);
 
+void Pic_test(void);
+
 #endif /* TFT_TEST_H */
